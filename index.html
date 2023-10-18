@@ -58,15 +58,13 @@ Which pathway will you proceed with?]
 
 </tw-passagedata><tw-passagedata pid="6" name="Plead for your life" tags="" position="575,375" size="100,100">(text-colour:#38c3ff)[You begin to plead for your life! You tell the man in a panicking tone that you have no idea where you are. When the man recognizes your confusion, &#39;&#39;//he believes that you do not genuinely know where you are.//&#39;&#39; The man grabs you by the hand and leads you down a path leading towards a large house. The man declares that he lives inside that house and states &#39;&#39;//he is a farmer on a Tudor monastery//.&#39;&#39; He gives you some ale and conversate a little more. You were intrigued by his words...
 ]
-(text-colour:#00ffb1)[&#39;&#39;[[Ask more]] &#39;&#39;]</tw-passagedata><tw-passagedata pid="7" name="Ask more" tags="" position="450,450" size="100,100">Before you can ask the farmer a question, he insists you to tell him your name!
+(text-colour:#00ffb1)[&#39;&#39;[[Ask more]] &#39;&#39;]</tw-passagedata><tw-passagedata pid="7" name="Ask more" tags="" position="425,400" size="100,100">Before you can ask the farmer a question, he insists you to tell him your name!
 
 What do you choose to call yourself?(input:bind $name1)
 
-You have officially declared a name for youself! However, you don&#39;t know the farmers name! So, you asked the farmers his name.
 
-He states his name is (dropdown:bind $name2, &quot;Tommy&quot;, &quot;Joel&quot;, &quot;Jesse&quot;)
-
-[[Continue|Questions]]</tw-passagedata><tw-passagedata pid="8" name="Work for him" tags="" position="575,650" size="100,100">(text-colour:#38c3ff)[//&#39;&#39;You, $name1, are now a farmer on a Tudor monastery. &#39;&#39;//](text-colour:#38c3ff)[As you&#39;ve become a farmer, the more opportunites arise to make some money.
+[[Continue]]
+</tw-passagedata><tw-passagedata pid="8" name="Work for him" tags="" position="575,650" size="100,100">(text-colour:#38c3ff)[//&#39;&#39;You, $name1, are now a farmer on a Tudor monastery. &#39;&#39;//](text-colour:#38c3ff)[As you&#39;ve become a farmer, the more opportunites arise to make some money.
 ]
 (text-colour:#38c3ff)[Which job do will you do?]
 
@@ -276,7 +274,11 @@ You look like a mess, no offense though...
 
 And you weren&#39;t slick about it either...
 
-$arrested trespassing.</tw-passagedata></tw-storydata>
+$arrested trespassing.</tw-passagedata><tw-passagedata pid="46" name="Continue" tags="" position="425,525" size="100,100">You have officially declared a name for youself! However, you don&#39;t know the farmers name! So, you asked the farmers his name.
+
+He states his name is (dropdown:bind $name2, &quot;Tommy&quot;, &quot;Joel&quot;, &quot;Jesse&quot;)
+
+[[Continue|Questions]]</tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">(function(){"use strict";
 var require,define;!function(){var e={},r={};require=function(i){var n=e[i];return n&&(r[i]=n[1].apply(void 0,n[0].map(require)),e[i]=void 0),r[i]},(define=function(r,i,n){if("function"==typeof r)return r();e[r]=[i,n]}).amd=!0}();/*!
  * https://github.com/paulmillr/es6-shim
