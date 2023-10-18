@@ -13,56 +13,86 @@
 
 Which pathway will you proceed with?]
 
-The pathway into the&#39;&#39;(text-colour:#0fa)[ [[forest]]]&#39;&#39;
-The pathway to the nearby (text-colour:#0fa)[&#39;&#39;[[stream]]&#39;&#39;]
-The pathway to the nearby (text-colour:#0fa)[&#39;&#39;[[village]]&#39;&#39;]</tw-passagedata><tw-passagedata pid="2" name="forest" tags="" position="725,125" size="100,100">(text-colour:#38c3ff)[You have chosen the pathway to the forest! You are no longer sweating profusely and cooled off due to the shade from the tall trees. You have beaten death from heat exhaustion!
+(text-colour:#38c3ff)[The pathway into the]&#39;&#39;(text-colour:#0fa)[ [[forest]]]&#39;&#39;
+(text-colour:#38c3ff)[The pathway to the nearby] (text-colour:#0fa)[&#39;&#39;[[stream]]&#39;&#39;]
+(text-colour:#38c3ff)[The pathway to the nearby] (text-colour:#0fa)[&#39;&#39;[[village]]&#39;&#39;]
 
-However...]
 
-(text-colour:#38c3ff)[You definitely] (text-colour:#840101)[//did not//] (text-colour:#38c3ff)[beat that animal you came across in the forest...]
+(set: $animal to &quot;You were eaten.&quot;)
+</tw-passagedata><tw-passagedata pid="2" name="forest" tags="" position="725,125" size="100,100">(text-colour:#38c3ff)[You have chosen the pathway to the forest! You are no longer sweating profusely and cooled off due to the shade from the tall trees. You have beaten death from heat exhaustion!
 
-(text-colour:#38c3ff)[As you tried to runaway, you tripped on a branch, and completely faceplanted into the ground...
-]
-(text-colour:#840101)[//And that animal got to eat before you did...//]
+(after:3s)[However...]]
 
-(text-colour:#38c3ff)[That&#39;s rough, buddy.]</tw-passagedata><tw-passagedata pid="3" name="stream" tags="" position="725,0" size="100,100">(text-colour:#38c3ff)[You have chosen the pathway to the nearby stream! You were in the Sun for a really long time, and you finally got to drink some water. Well deserved!
+(after:6s)[(text-colour:#38c3ff)[You definitely] (text-colour:#840101)[//did not//] (text-colour:#38c3ff)[beat that animal you came across in the forest...]]
 
-However... You were a little &#39;&#39;//TOO//&#39;&#39; thirsty...]
+(after:9s)[(text-colour:#38c3ff)[As you tried to runaway, you tripped on a branch, and completely faceplanted into the ground...
+]]
+(after:12s)[(text-colour:#840101)[//And that animal got to eat before you did...//]]
 
-(text-colour:#840101)[//You fell into the stream, and you don&#39;t know how to swim...//]
+(after:15s)[(text-colour:#840101)[//$animal//]]
 
-(text-colour:#38c3ff)[&#39;&#39;//HOW DO YOU NOT KNOW HOW TO SWIM?//&#39;&#39;
+(after:18s)[(text-colour:#38c3ff)[That&#39;s rough, buddy.]]</tw-passagedata><tw-passagedata pid="3" name="stream" tags="" position="725,0" size="100,100">(text-colour:#38c3ff)[You have chosen the pathway to the nearby stream! You were in the Sun for a really long time, and you finally got to drink some water. Well deserved!
 
-Sad. To be fair, you probably would&#39;ve die from drinking the water anyways.]</tw-passagedata><tw-passagedata pid="4" name="village" tags="" position="575,250" size="100,100">(text-colour:#38c3ff)[You have chosen the pathway to the nearby village! You wander around the village for sometime and end up in a field of barley. &#39;&#39;//You were suddenly startled by the sound of a man yelling at the top of his lungs.// &#39;&#39;The older-looking gentleman with a farmers tan thought you were trying to mess with his crops. You noticed he is carrying a sickle in his hand.] (text-colour:#a50303)[//You begin to panic as you are unsure on what to do...//]
+(after:3s)[However... You were a little &#39;&#39;//TOO//&#39;&#39; thirsty...]]
+
+(after:6s)[(text-colour:#840101)[//You fell into the stream, and you don&#39;t know how to swim...//]]
+
+(after:9s)[(text-colour:#38c3ff)[&#39;&#39;//HOW DO YOU NOT KNOW HOW TO SWIM?//&#39;&#39;]]
+
+(after:12s)[(text-colour:#38c3ff)[As you start flowing down the stream, you noticed a a giant rock coming towards your way. You were able to grab onto the giant rock and [[pull yourself out of the stream.]]]]
+
+(set: $scream to &quot;You began to scream for help, but no one arrived.&quot;)</tw-passagedata><tw-passagedata pid="4" name="village" tags="" position="575,250" size="100,100">(text-colour:#38c3ff)[You have chosen the pathway to the nearby village! You wander around the village for sometime and end up in a field of barley. &#39;&#39;//You were suddenly startled by the sound of a man yelling at the top of his lungs.// &#39;&#39;The older-looking gentleman with a farmers tan thought you were trying to mess with his crops. You noticed he is carrying a sickle in his hand.] 
 
 (text-colour:#38c3ff)[Do you...]
 (text-colour:#0fa)[&#39;&#39;[[Try to book it in the opposite direction]]&#39;&#39;]
 (text-colour:#0fa)[&#39;&#39;[[Plead for your life]]&#39;&#39;]
 
+(set: $arrested to &quot;You were arrested for&quot;)
 </tw-passagedata><tw-passagedata pid="5" name="Try to book it in the opposite direction" tags="" position="400,250" size="100,100">(text-colour:#38c3ff)[You tried to run away from the man with the sickle! The plan did not go accordingly because the moment] (text-colour:#840101)[//you started to run, you stumbled and faceplanted into the ground.//]
 
-(text-colour:#38c3ff)[You&#39;re pretty clumsy, aren&#39;t ya?
+(after:3s)[(text-colour:#38c3ff)[You&#39;re pretty clumsy, aren&#39;t ya?]]
 
-The man did not murder you with his sickle; &#39;&#39;//however//&#39;&#39;, he still thought you were trying to steal his crops.]
+(after:6s)[(text-colour:#38c3ff)[The man did not murder you with his sickle; &#39;&#39;//however//&#39;&#39;, he still thought you were trying to steal his crops.]]
 
-(text-colour:#840101)[//You were arrested for trespassing and stealing, and sentenced to life in prison.//]</tw-passagedata><tw-passagedata pid="6" name="Plead for your life" tags="" position="575,375" size="100,100">(text-colour:#38c3ff)[You begin to plead for your life! You tell the man in a panicking tone that you have no idea where you are. When the man recognizes your confusion, &#39;&#39;//he believes that you do not genuinely know where you are.//&#39;&#39; The man grabs you by the hand and leads you down a path leading towards a large house. The man declares that he lives inside that house and states &#39;&#39;//he is a farmer on a Tudor monastery//.&#39;&#39; He gives you some ale and conversate a little more. You were intrigued by his words...
+(after:9s)[(text-colour:#840101)[//$arrested trespassing and stealing, and sentenced to life in prison.//]]
+
+</tw-passagedata><tw-passagedata pid="6" name="Plead for your life" tags="" position="575,375" size="100,100">(text-colour:#38c3ff)[You begin to plead for your life! You tell the man in a panicking tone that you have no idea where you are. When the man recognizes your confusion, &#39;&#39;//he believes that you do not genuinely know where you are.//&#39;&#39; The man grabs you by the hand and leads you down a path leading towards a large house. The man declares that he lives inside that house and states &#39;&#39;//he is a farmer on a Tudor monastery//.&#39;&#39; He gives you some ale and conversate a little more. You were intrigued by his words...
 ]
-(text-colour:#00ffb1)[&#39;&#39;[[Ask more]] &#39;&#39;]</tw-passagedata><tw-passagedata pid="7" name="Ask more" tags="" position="575,525" size="100,100">(text-colour:#38c3ff)[You asked him more questions. He tells you he has &#39;&#39;//no workers and is struggling to make  profit//,&#39;&#39; in order to keep his house and rights he needs to be able to pay rent to the monastery. Out of desperation, he asks you to work for him. He&#39;ll allow you to live in his house as long as you take the job offer.]
+(text-colour:#00ffb1)[&#39;&#39;[[Ask more]] &#39;&#39;]</tw-passagedata><tw-passagedata pid="7" name="Ask more" tags="" position="450,450" size="100,100">Before you can ask the farmer a question, he insists you to tell him your name!
 
-(text-colour:#38c3ff)[Do you...]
-(text-colour:#00ffb1)[&#39;&#39;[[Work for him]]&#39;&#39;]
-(text-colour:#00ffb1)[&#39;&#39;[[Decline and wonder else where]]&#39;&#39;]</tw-passagedata><tw-passagedata pid="8" name="Work for him" tags="" position="575,650" size="100,100">(text-colour:#38c3ff)[//&#39;&#39;You are now a farmer on a Tudor monastery. &#39;&#39;//](text-colour:#38c3ff)[As you&#39;ve become a farmer, the more opportunites arise to make some money.
+What do you choose to call yourself?(input:bind $name1)
+
+You have officially declared a name for youself! However, you don&#39;t know the farmers name! So, you asked the farmers his name.
+
+He states his name is (dropdown:bind $name2, &quot;Tommy&quot;, &quot;Joel&quot;, &quot;Jesse&quot;)
+
+[[Continue|Questions]]</tw-passagedata><tw-passagedata pid="8" name="Work for him" tags="" position="575,650" size="100,100">(text-colour:#38c3ff)[//&#39;&#39;You, $name1, are now a farmer on a Tudor monastery. &#39;&#39;//](text-colour:#38c3ff)[As you&#39;ve become a farmer, the more opportunites arise to make some money.
 ]
 (text-colour:#38c3ff)[Which job do will you do?]
 
 (text-colour:#00ffb1)[&#39;&#39;[[mining for lead]]&#39;&#39;]
 (text-colour:#00ffb1)[&#39;&#39;[[wool production]]&#39;&#39;]
 (text-colour:#00ffb1)[&#39;&#39;[[fishing]]&#39;&#39;]
-(text-colour:#00ffb1)[&#39;&#39;[[basic farming]]&#39;&#39;]</tw-passagedata><tw-passagedata pid="9" name="Decline and wonder else where" tags="" position="775,525" size="100,100">(text-colour:#38c3ff)[You] (text-colour:#840101)[//angered//] (text-colour:#38c3ff)[the man. So, he] (text-colour:#840101)[//called the authorities on you //](text-colour:#38c3ff)[for theft and trespassing. Why didn&#39;t you take the job offer? He was being kind to you! He was showing you hospitality! And why wouldn&#39;t you take the job, you have no where else to go anyways!]</tw-passagedata><tw-passagedata pid="10" name="mining for lead" tags="" position="375,775" size="100,100">(text-colour:#38c3ff)[You chose to go mining for lead! Tenant farmers eventually branched off into other jobs to make some extra cash. Props to you for being different! Lead was valuable due to its malleability and resistance to corrosion made it great as roofs; therefore, it is a source easy to sell. &#39;&#39;//However//&#39;&#39;, you realized before you can start mining for lead, //&#39;&#39;you need to lease before you can do so.&#39;&#39;// You are debating whether to start mining without a lease, or to be granted one from the monastery.]
+(text-colour:#00ffb1)[&#39;&#39;[[basic farming]]&#39;&#39;]
+
+(set: $money to &quot;You made money today!&quot;)</tw-passagedata><tw-passagedata pid="9" name="Decline and wonder else where" tags="" position="775,525" size="100,100">(text-colour:#38c3ff)[You, $name1,] (text-colour:#840101)[//angered//] (text-colour:#38c3ff)[$name2.]
+
+(after:3s)[Why didn&#39;t you take the job offer? ]
+
+(after:6s)[$name2 was being kind to you! ]
+
+(after:9s)[$name2 was showing you hospitality!]
+
+(after:12s)[You decided to go on a [[walk]] after decling $name2&#39;s offer]
+
+(set: $arrested to &quot;You were arrested for&quot;)</tw-passagedata><tw-passagedata pid="10" name="mining for lead" tags="" position="375,775" size="100,100">(text-colour:#38c3ff)[You chose to go mining for lead! Tenant farmers eventually branched off into other jobs to make some extra cash. Props to you for being different! Lead was valuable due to its malleability and resistance to corrosion made it great as roofs; therefore, it is a source easy to sell. &#39;&#39;//However//&#39;&#39;, you realized before you can start mining for lead, //&#39;&#39;you need to lease before you can do so.&#39;&#39;// You are debating whether to start mining without a lease, or to be granted one from the monastery.]
 
 (text-colour:#38c3ff)[Do you...]
 (text-colour:#00ffb1)[&#39;&#39;[[seek a lease]]&#39;&#39;]
 (text-colour:#00ffb1)[&#39;&#39;[[start mining anyways]]&#39;&#39;]</tw-passagedata><tw-passagedata pid="11" name="wool production" tags="" position="525,825" size="100,100">(text-colour:#38c3ff)[It is springtime in Tudor England that means it is time to shear the sheep for their wool! Wool is one of the most dominating incomes sources as it made up majority of the nation&#39;s wealth. It is very important you gather the finest quality of wool to sell.
+
+What is your sheep&#39;s name?
+(dropdown:bind $name3, &quot;Benjameen&quot;, &quot;Twinkle&quot;, &quot;Socks&quot;)
 
 To guarantee a good return on the wool, the wool needs to be excellent quality. In order to achieve that excellent quality, &#39;&#39;//the sheep must be well-washed.//&#39;&#39;
 
@@ -75,11 +105,11 @@ Do you...]
 (text-colour:#00ffb1)[&#39;&#39;[[get a lease]]&#39;&#39;]
 (text-colour:#00ffb1)[&#39;&#39;[[fish anyways]]&#39;&#39;]</tw-passagedata><tw-passagedata pid="13" name="start mining anyways" tags="" position="225,775" size="100,100">(text-colour:#38c3ff)[Does it hurt to be a little patient? 
 
-You &#39;&#39;//need//&#39;&#39; a lease in order to start mining, so you don&#39;t get in trouble with the monastery!
+(after:3s)[You &#39;&#39;//need//&#39;&#39; a lease in order to start mining, so you don&#39;t get in trouble with the monastery!]
 
-No ifs, ands, and buts!]
+(after:6s)[No ifs, ands, and buts!]]
 
-(text-colour:#840101)[//You were arrested.//]</tw-passagedata><tw-passagedata pid="14" name="seek a lease" tags="" position="375,925" size="100,100">(text-colour:#38c3ff)[//&#39;&#39;You&#39;ve been granted a lease to work in the lead mines.&#39;&#39;// The man comes down to the mines with you to help you chisel and hammer out the lead ore. You&#39;ve brought a barrow down to the mines with you to carry your lead ore.
+(after:9s)[(text-colour:#840101)[//$arrested working without a lease.//]]</tw-passagedata><tw-passagedata pid="14" name="seek a lease" tags="" position="375,925" size="100,100">(text-colour:#38c3ff)[//&#39;&#39;You&#39;ve been granted a lease to work in the lead mines.&#39;&#39;// The man comes down to the mines with you to help you chisel and hammer out the lead ore. You&#39;ve brought a barrow down to the mines with you to carry your lead ore.
 
 You&#39;ve been mining for a couple hours now. You and the man are getting tired, but the barrow isn&#39;t entirely full yet. You believe you should head up to the surface because you&#39;ve been inhaling the lead dust for hours now, and continue mining in a couple days. The man believes you two should keep mining til the barrow is full.
 
@@ -87,7 +117,7 @@ Do you...]
 (text-colour:#00ffb1)[&#39;&#39;[[head up to the surface]]&#39;&#39;]
 (text-colour:#00ffb1)[&#39;&#39;[[the barrow is almost full; continue mining]]&#39;&#39;]</tw-passagedata><tw-passagedata pid="15" name="the barrow is almost full; continue mining" tags="" position="175,925" size="100,100">(text-colour:#38c3ff)[You managed to fill the entire barrow with lead. The repeated process of going to the mines to fill the barrow to the brim with lead ore has consequences you know! In a couple weeks, you and the man had suffered from](text-colour:#840101)[ //lead poisoning//] (text-colour:#38c3ff)[because of inhaling the lead dust for a prolonged period of time.]
 
-(text-colour:#38c3ff)[The man believes that God has] (text-colour:#840101)[//punished//](text-colour:#38c3ff)[ him for being greedy.]</tw-passagedata><tw-passagedata pid="16" name="head up to the surface" tags="" position="375,1050" size="100,100">(text-colour:#38c3ff)[You decided to head up to the surface with your barrow of lead ore. &#39;&#39;//The lead you have obtained must need to be smelted and extract the metal from the rock.//&#39;&#39; In order to smelt correctly, the rock with the lead ore must be heated to 600-degrees fahrenheit. This is where the world&#39;s natural resources come into play because all that is needed is stones to build the furnance, oak wood to become white coal. You and the farmer gather the needed materials to start building the furnance...
+(after:3s)[(text-colour:#38c3ff)[The man believes that God has] (text-colour:#840101)[//punished//](text-colour:#38c3ff)[ him for being greedy.]]</tw-passagedata><tw-passagedata pid="16" name="head up to the surface" tags="" position="375,1050" size="100,100">(text-colour:#38c3ff)[You decided to head up to the surface with your barrow of lead ore. &#39;&#39;//The lead you have obtained must need to be smelted and extract the metal from the rock.//&#39;&#39; In order to smelt correctly, the rock with the lead ore must be heated to 600-degrees fahrenheit. This is where the world&#39;s natural resources come into play because all that is needed is stones to build the furnance, oak wood to become white coal. You and the farmer gather the needed materials to start building the furnance...
 
 Where do you choose to place the furnance?]
 (text-colour:#00ffb1)[&#39;&#39;[[Top of the Hill]]&#39;&#39;]
@@ -99,62 +129,75 @@ Where do you choose to place the furnance?]
 ]
 (text-colour:#00ffb1)[&#39;&#39;[[Start Refining]]&#39;&#39;]
 
-&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/VwlipLOBBiY?si=zEA-_69fuliCr1qA&amp;amp;start=1614&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&quot; allowfullscreen&gt;&lt;/iframe&gt;</tw-passagedata><tw-passagedata pid="18" name="Near the Farm" tags="" position="150,1075" size="100,100">(text-colour:#38c3ff)[You and your farmer friend built the furnance near the farm. You lit the furnance to begin smelting your lead ore.
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/VwlipLOBBiY?si=zEA-_69fuliCr1qA&amp;amp;start=1614&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&quot; allowfullscreen&gt;&lt;/iframe&gt;
 
-Uh oh!
 
-The fire blew into your barley crops and the fire began to spread.
+(set: $money to &quot;You made money today!&quot;)</tw-passagedata><tw-passagedata pid="18" name="Near the Farm" tags="" position="150,1075" size="100,100">(text-colour:#38c3ff)[You and your farmer friend built the furnance near the farm. You lit the furnance to begin smelting your lead ore.
+
+(after:3s)[Uh oh!]
+
+(after:6s)[The fire blew into your barley crops and the fire began to spread.]
 ]
-(text-colour:#840101)[//The whole village has set ablaze...//]
+(after:9s)[(text-colour:#840101)[//The whole village has set ablaze...//]]
 
-(text-colour:#38c3ff)[You know the whole story.]</tw-passagedata><tw-passagedata pid="19" name="Start Refining" tags="" position="375,1325" size="100,100">(text-colour:#38c3ff)[You refined the lead into lead ingots. You created 15 lead ingots worth 8 pounds each; therefore, you&#39;ve made 120 pounds from just a few ingots. ]
+(after:12s)[(text-colour:#38c3ff)[You know the whole story.]]</tw-passagedata><tw-passagedata pid="19" name="Start Refining" tags="" position="375,1325" size="100,100">(text-colour:#38c3ff)[You refined the lead into lead ingots. You created 15 lead ingots worth 8 pounds each; therefore, you&#39;ve made 120 pounds from just a few ingots. ]
 
-(text-colour:#00ffb1)[&#39;&#39;[[Congratulations|Congrats]]&#39;&#39;]</tw-passagedata><tw-passagedata pid="20" name="Congrats" tags="" position="675,1525" size="100,100">(text-colour:green)[&#39;&#39;//Your life as a Tudor farmer on a monastery paid off!// &#39;&#39;](text-colour:#38c3ff)[You were able to help the man pay off his rent for his house and perserve his rights! Additionally, you made some extra cash. You gave it some thought and decided to continue your life working as a Tudor farmer.]</tw-passagedata><tw-passagedata pid="21" name="get a lease" tags="" position="875,900" size="100,100">(text-colour:#38c3ff)[&#39;&#39;//You&#39;ve been granted a lease to use the waterways to go fishing.//&#39;&#39; You have yours eyes set on capturing a few eels and selling them, it is one of the most sought out fishes. However, it is quite an elaborate process to catch them.
+$money
+
+(text-colour:#00ffb1)[&#39;&#39;[[Congratulations|Congrats]]&#39;&#39;]</tw-passagedata><tw-passagedata pid="20" name="Congrats" tags="" position="675,1525" size="100,100">(text-colour:green)[&#39;&#39;//Your life as a Tudor farmer on a monastery paid off, $name1!// &#39;&#39;](text-colour:#38c3ff)[You were able to help the man pay off his rent for his house and perserve his rights! Additionally, you made some extra cash. You gave it some thought and decided to continue your life working as a Tudor farmer.]</tw-passagedata><tw-passagedata pid="21" name="get a lease" tags="" position="875,900" size="100,100">(text-colour:#38c3ff)[&#39;&#39;//You&#39;ve been granted a lease to use the waterways to go fishing.//&#39;&#39; You have yours eyes set on capturing a few eels and selling them, it is one of the most sought out fishes. However, it is quite an elaborate process to catch them.
  
 How do you try to capture the eels:]
 (text-colour:#00ffb1)[&#39;&#39;[[by hand]]&#39;&#39;]
-(text-colour:#00ffb1)[&#39;&#39;[[by a woven basket]]&#39;&#39;]</tw-passagedata><tw-passagedata pid="22" name="fish anyways" tags="" position="1025,775" size="100,100">(text-colour:#38c3ff)[Patience is a good virtue to have, you know!
+(text-colour:#00ffb1)[&#39;&#39;[[by a woven basket]]&#39;&#39;]</tw-passagedata><tw-passagedata pid="22" name="fish anyways" tags="" position="1025,775" size="100,100">(text-colour:#38c3ff)[Patience is a good virtue to have, you know!]
 
-You can&#39;t just do anything you want without seeking permission from the higher ups.
+(after:3s)[(text-colour:#38c3ff)[You can&#39;t just do anything you want without seeking permission from the higher ups.]]
+
+(after:6s)[(text-colour:#840101)[//$arrested working without a lease.//]]</tw-passagedata><tw-passagedata pid="23" name="by hand" tags="" position="1025,900" size="100,100">(text-colour:#38c3ff)[You were in your little canoe going down the stream, and you see an eel close to the surface of the water. You try to reach for the eel with your hands, but you leaned a little too far forward.
 ]
-(text-colour:#840101)[//You got arrested.//]</tw-passagedata><tw-passagedata pid="23" name="by hand" tags="" position="1025,900" size="100,100">(text-colour:#38c3ff)[You were in your little canoe going down the stream, and you see an eel close to the surface of the water. You try to reach for the eel with your hands, but you leaned a little too far forward.
-]
-(text-colour:#840101)[//You tipped the entire canoe over and fell into the stream.
-//]
-(text-colour:#840101)[//You could&#39;ve drowned.//]
+(after:3s)[(text-colour:#840101)[//You tipped the entire canoe over and fell into the stream.//]]
 
-(text-colour:#38c3ff)[Learn with Ruth in order to create a proper eel trap!]
-&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/VwlipLOBBiY?si=mHLMmFGV-RQpFTZ9&amp;amp;start=424&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&quot; allowfullscreen&gt;&lt;/iframe&gt;
+(after:6s)[(text-colour:#840101)[//You could&#39;ve drowned.//]]
 
-(text-colour:#38c3ff)[Cast into the stream with the](text-colour:#00ffb1)[&#39;&#39; [[eel trap|by a woven basket]]&#39;&#39;]</tw-passagedata><tw-passagedata pid="24" name="by a woven basket" tags="" position="875,1025" size="100,100">(text-colour:#38c3ff)[You&#39;ve created a basket with two cones inside one another, and woven by willow branches. The two cones allows the dead fish (bait) to stay set in place, and prevented from floating out of the basket trap. The trap for the eels is now ready for action:
+(after:9s)[(text-colour:#38c3ff)[Learn with Ruth in order to create a proper eel trap!]
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/VwlipLOBBiY?si=mHLMmFGV-RQpFTZ9&amp;amp;start=424&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&quot; allowfullscreen&gt;&lt;/iframe&gt;]
+
+(after:12s)[(text-colour:#38c3ff)[Cast into the stream with the](text-colour:#00ffb1)[&#39;&#39; [[eel trap|by a woven basket]]&#39;&#39;]]</tw-passagedata><tw-passagedata pid="24" name="by a woven basket" tags="" position="875,1025" size="100,100">(text-colour:#38c3ff)[You&#39;ve created a basket with two cones inside one another, and woven by willow branches. The two cones allows the dead fish (bait) to stay set in place, and prevented from floating out of the basket trap. The trap for the eels is now ready for action:
 
 You casted the basket in:]
 (text-colour:#00ffb1)[&#39;&#39;[[in the light]]&#39;&#39;]
 (text-colour:#00ffb1)[&#39;&#39;[[in the shade]]&#39;&#39;]</tw-passagedata><tw-passagedata pid="25" name="in the light" tags="" position="1025,1025" size="100,100">(text-colour:#38c3ff)[You casted your woven basket in the light to try to capture eels. However, you wasted a lot of time trying to lure in some eels. Eels prefer the shade area of a stream.]
 
-(text-colour:#840101)[//You made no money that day.//]</tw-passagedata><tw-passagedata pid="26" name="in the shade" tags="" position="875,1150" size="100,100">(text-colour:#38c3ff)[You casted the woven trap directly into the shade.&#39;&#39;// You had success and managed to capture a few eels to sell for a good sum of money.//&#39;&#39;]
+(after:3s)[(text-colour:#840101)[//You made no money that day.//]]</tw-passagedata><tw-passagedata pid="26" name="in the shade" tags="" position="875,1150" size="100,100">(text-colour:#38c3ff)[You casted the woven trap directly into the shade.&#39;&#39;// You had success and managed to capture a few eels to sell for a good sum of money.//&#39;&#39;]
 
-(text-colour:#00ffb1)[&#39;&#39;[[Congratulations|Congrats]]&#39;&#39;]</tw-passagedata><tw-passagedata pid="27" name="wash the sheep" tags="" position="525,950" size="100,100">(text-colour:#38c3ff)[You washed your sheep&#39;s wool! &#39;&#39;//You now have the potiential to achieve the most excellent quality of wool imaginable.//&#39;&#39; You placed the sheep on the shearing bench to elevate the sheep off the ground, and to prevent the sheep&#39;s wool from getting dirty and losing value.]
+$money
 
-(text-colour:#38c3ff)[You begin to] (text-colour:#00ffb1)[&#39;&#39;[[shear]]&#39;&#39;] (text-colour:#38c3ff)[the sheep.]
+(text-colour:#00ffb1)[&#39;&#39;[[Congratulations|Congrats]]&#39;&#39;]</tw-passagedata><tw-passagedata pid="27" name="wash the sheep" tags="" position="525,950" size="100,100">(text-colour:#38c3ff)[You washed your $name3&#39;s wool! &#39;&#39;//You now have the potiential to achieve the most excellent quality of wool imaginable.//&#39;&#39; You placed the $name3 on the shearing bench to elevate the sheep off the ground, and to prevent the sheep&#39;s wool from getting dirty and losing value.]
+
+(text-colour:#38c3ff)[You begin to] (text-colour:#00ffb1)[&#39;&#39;[[shear]]&#39;&#39;] (text-colour:#38c3ff)[the $name3.]
 
 (text-colour:#38c3ff)[Use Peter and Tom&#39;s example of how to shear the wool properly!]
 &lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/L4EtG5WFxwc?si=8STg7D0tFmVbcQV6&amp;amp;start=1714&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&quot; allowfullscreen&gt;&lt;/iframe&gt;
 
-</tw-passagedata><tw-passagedata pid="28" name="do not wash the sheep" tags="" position="650,825" size="100,100">(text-colour:#38c3ff)[You decided to not wash your sheep before shearing it for its wool.] (text-colour:#840101)[//Do not take the lazy route! You&#39;ll gain nearly nothing from unwashed sheep wool!
-//]
-(text-colour:#00ffb1)[[[Wash it!|wash the sheep]]]
+</tw-passagedata><tw-passagedata pid="28" name="do not wash the sheep" tags="" position="650,825" size="100,100">(text-colour:#38c3ff)[You decided to not wash your sheep before shearing it for its wool.] 
 
-(text-colour:#38c3ff)[Use their example on how to properly wash the sheep and gain an understanding of the importance of washing their wool!]
-&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/L4EtG5WFxwc?si=8Lhyvyy2xH0wsLjF&amp;amp;start=587&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&quot; allowfullscreen&gt;&lt;/iframe&gt;</tw-passagedata><tw-passagedata pid="29" name="shear" tags="" position="525,1075" size="100,100">(text-colour:#38c3ff)[You started to shear the sheep. As you continously shear away at the sheep&#39;s white wool,] (text-colour:#840101)[//you accidentally get to close to the sheep&#39;s skin and cut it.// ](text-colour:#38c3ff)[You begin to panic. As you do not want the sheep&#39;s wool to be stained by the sheep&#39;s blood, and you do not want the sheep to get infected and die from the open wound.
+(after:3s)[(text-colour:#840101)[//Do not take the lazy route! You&#39;ll gain nearly nothing from unwashed sheep wool!//]]
+
+(after:6s)[(text-colour:#00ffb1)[[[Wash it!|wash the sheep]]]]
+
+(after:9s)[(text-colour:#38c3ff)[Use their example on how to properly wash the sheep and gain an understanding of the importance of washing their wool!]
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/L4EtG5WFxwc?si=8Lhyvyy2xH0wsLjF&amp;amp;start=587&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&quot; allowfullscreen&gt;&lt;/iframe&gt;]</tw-passagedata><tw-passagedata pid="29" name="shear" tags="" position="525,1075" size="100,100">(text-colour:#38c3ff)[You started to shear the $name3. As you continously shear away at the sheep&#39;s white wool,] (text-colour:#840101)[//you accidentally get to close to the sheep&#39;s skin and cut it.// ](text-colour:#38c3ff)[You begin to panic. As you do not want the sheep&#39;s wool to be stained by the sheep&#39;s blood, and you do not want $name3 to get infected and die from the open wound.
 
 Do you...]
 (text-colour:#00ffb1)[&#39;&#39;[[clean up the wound, and hope for the best]]&#39;&#39;]
-(text-colour:#00ffb1)[&#39;&#39;[[give the sheep medicine]]&#39;&#39;]</tw-passagedata><tw-passagedata pid="30" name="clean up the wound, and hope for the best" tags="" position="650,1075" size="100,100">(text-colour:#38c3ff)[Although, cleaning the wound might be a good solution. It&#39;s only really good as a ](text-colour:#840101)[//temporary solution and ineffective in the long-run. //](text-colour:#38c3ff)[The sheep gets infected from its wound and dies.]
+(text-colour:#00ffb1)[&#39;&#39;[[give the sheep medicine]]&#39;&#39;]</tw-passagedata><tw-passagedata pid="30" name="clean up the wound, and hope for the best" tags="" position="650,1075" size="100,100">(text-colour:#38c3ff)[Although, cleaning the wound might be a good solution. It&#39;s only really good as a ](text-colour:#840101)[//temporary solution and ineffective in the long-run. //]
 
-(text-colour:#840101)[//The lost of your sheep cuts the amount of money you&#39;ll earn, until you can replace it. //](text-colour:#38c3ff)[Replacing it meaning buying a new sheep, and you don&#39;t have any money right now! ]</tw-passagedata><tw-passagedata pid="31" name="give the sheep medicine" tags="" position="525,1200" size="100,100">(text-colour:#38c3ff)[&#39;&#39;//You gave the sheep the medicine you produced in order to prevent parasites from infesting the wool!//&#39;&#39; You, additionally, saved the quality of the wool in future shearing; therefore, you&#39;ll be able to make even more money later on!]
+(after:3s)[(text-colour:#38c3ff)[The sheep gets infected from its wound and dies.]]
+
+(after:6s)[(text-colour:#840101)[//The lost of your sheep cuts the amount of money you&#39;ll earn, until you can replace it. //](text-colour:#38c3ff)[Replacing it meaning buying a new sheep, and you don&#39;t have any money right now! ]]</tw-passagedata><tw-passagedata pid="31" name="give the sheep medicine" tags="" position="525,1200" size="100,100">(text-colour:#38c3ff)[&#39;&#39;//You gave the sheep the medicine you produced in order to prevent parasites from infesting the wool!//&#39;&#39; You, additionally, saved the quality of the wool in future shearing; therefore, you&#39;ll be able to make even more money later on!]
 
 (text-colour:#00ffb1)[&#39;&#39;[[How did you do?]]&#39;&#39;]</tw-passagedata><tw-passagedata pid="32" name="How did you do?" tags="" position="625,1325" size="100,100">(text-colour:#38c3ff)[&#39;&#39;//You were able to shear a lot of wool of impeccable quality!//&#39;&#39; The monasteries were very impressed with the wool you brought them! So impressed, they decided to give a bonus for the great wool you produced!]
+
+$money
 
 (text-colour:#00ffb1)[&#39;&#39;[[Congratulations|Congrats]]&#39;&#39;]</tw-passagedata><tw-passagedata pid="33" name="basic farming" tags="" position="1225,750" size="100,100">(text-colour:#38c3ff)[You decided to keep it simple and work on the farm to make your money! There is a multitude of ways to make some cash just simply by doing work on the farm...
 
@@ -168,32 +211,72 @@ Do you...]
 (text-colour:#00ffb1)[&#39;&#39;[[attempt to fix it]]&#39;&#39;]
 </tw-passagedata><tw-passagedata pid="35" name="plow and plant crops" tags="" position="1350,875" size="100,100">(text-colour:#38c3ff)[You decided you wanted to plant crops and later sell them. Your chosen crop is barley! Barley is super essential to everyone in the Tudor monastery. Water was often contaiminated and not safe to drink. Barley is used to make alcohol, and alcohol would kill the bacteria within the contaiminated water; therefore, making it safe to drink. Ale was the main source for people within the village to stay hydrated.]
 
-(text-colour:#38c3ff)[First, the acres of land you plan to plant your barley needs to be ](text-colour:#00ffb1)[&#39;&#39;[[plowed]]&#39;&#39;].</tw-passagedata><tw-passagedata pid="36" name="ignore it" tags="" position="1150,1000" size="100,100">(text-colour:#38c3ff)[You decided to ignore it. Later, you received word that pigs started to attack the townspeople and destroy other farmers&#39; crops. 
+(text-colour:#38c3ff)[First, the acres of land you plan to plant your barley needs to be ](text-colour:#00ffb1)[&#39;&#39;[[plowed]]&#39;&#39;].</tw-passagedata><tw-passagedata pid="36" name="ignore it" tags="" position="1150,1000" size="100,100">(text-colour:#38c3ff)[You decided to ignore it. Later, you received word that pigs started to attack the townspeople and destroy other $name2&#39;s crops. 
 
-It was traced back to you that it was your pig that caused all this destruction, probably because the evidence of the broken fence made it obvious it was you.
+(after:3s)[It was traced back to you that it was your pig that caused all this destruction, probably because the evidence of the broken fence made it obvious it was you.]
 
-You won&#39;t gain anything being lazy!]
+(after:6s)[You won&#39;t gain anything being lazy!]]
 
-(text-colour:#840101)[//You&#39;ll get arrested for endangering the public.//]
+(after:9s)[(text-colour:#840101)[//$arrested endangering the public.//]]
 
-Use Tom and Peter&#39;s example of how to properly fix the pig enclosure!
-&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/yXVzSkfPX4g?si=-QLMFAD44JmtEsXA&amp;amp;start=670&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&quot; allowfullscreen&gt;&lt;/iframe&gt;
+(after:12s)[(text-colour:#38c3ff)[Use Tom and Peter&#39;s example of how to properly fix the pig enclosure!]
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/yXVzSkfPX4g?si=-QLMFAD44JmtEsXA&amp;amp;start=670&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&quot; allowfullscreen&gt;&lt;/iframe&gt;]
 
-(text-colour:#00ffb1)[&#39;&#39;[[attempt to fix it]]&#39;&#39;]</tw-passagedata><tw-passagedata pid="37" name="attempt to fix it" tags="" position="1300,1000" size="100,100">(text-colour:#38c3ff)[You decided to fix the fence. You were able to enclose the pig pen securely, and prevented any pigs from escaping. Your pigs were able to breed properly and now you have piglets on the way!
+(after:15s)[(text-colour:#00ffb1)[&#39;&#39;[[attempt to fix it]]&#39;&#39;]]</tw-passagedata><tw-passagedata pid="37" name="attempt to fix it" tags="" position="1300,1000" size="100,100">(text-colour:#38c3ff)[You decided to fix the fence. You were able to enclose the pig pen securely, and prevented any pigs from escaping. Your pigs were able to breed properly and now you have piglets on the way!
 
 &#39;&#39;//You were able to sell of those piglets for some cash.//&#39;&#39;
 
 Pigs were often slaughter in order to have some sort of means of meat by the Winter time, since the farmers did not actively tried to keep the pigs alive throughout the Winter.]
 
-(text-colour:#00ffb1)[&#39;&#39;[[Congratulations|Congrats]]&#39;&#39;]</tw-passagedata><tw-passagedata pid="38" name="plowed" tags="" position="1475,1000" size="100,100">(text-colour:#38c3ff)[You plowed the acres of land. You were able to plant hundreds of barley seeds. To ensure you have a good harvest, you are debating whether you should worship St. Scholastica, the patron saint for good weather. &#39;&#39;//It was often a common practice for farmers to worship St. Scholastica.
-//&#39;&#39;
-Do you...]
+$money
+
+(text-colour:#00ffb1)[&#39;&#39;[[Congratulations|Congrats]]&#39;&#39;]</tw-passagedata><tw-passagedata pid="38" name="plowed" tags="" position="1475,1000" size="100,100">(text-colour:#38c3ff)[You plowed the acres of land. You were able to plant hundreds of barley seeds. To ensure you have a good harvest, you are debating whether you should worship a patron to up your chances.&#39;&#39;//It was often a common practice for farmers to worship a patron .
+//&#39;&#39;]
+
+
+Do you...
 (text-colour:#00ffb1)[&#39;&#39;[[worship for a good harvest]]&#39;&#39;]
-(text-colour:#00ffb1)[&#39;&#39;[[just move on with life]]&#39;&#39;]</tw-passagedata><tw-passagedata pid="39" name="worship for a good harvest" tags="" position="1475,1125" size="100,100">(text-colour:#38c3ff)[You worshipped St. Scholastica. &#39;&#39;//As a result, you were able to have great weather throughout the duration of your crops growing.//&#39;&#39; It was a successful harvest and you were able to make a profit from your barley crops.]
+(text-colour:#00ffb1)[&#39;&#39;[[just move on with life]]&#39;&#39;]</tw-passagedata><tw-passagedata pid="39" name="worshipped" tags="" position="1300,1175" size="100,100">(text-colour:#38c3ff)[You worshipped $name4. &#39;&#39;//As a result, you were able to have great weather throughout the duration of your crops growing.//&#39;&#39; It was a successful harvest and you were able to make a profit from your barley crops.]
 
-(text-colour:#00ffb1)[&#39;&#39;[[Congratulations|Congrats]]&#39;&#39;]</tw-passagedata><tw-passagedata pid="40" name="just move on with life" tags="" position="1600,1125" size="100,100">(text-colour:#38c3ff)[You did not worship to St. Scholastica. As a result, a drought has occured and your plants were ruined in before you could harvest. ](text-colour:#840101)[//You can no longer make a profit from your harvest and now stuck in the mud.//]
+$money
 
-(text-colour:#38c3ff)[In reality, you were just unlucky. However, you believed it was because you did not worship for good weather.]</tw-passagedata></tw-storydata>
+(text-colour:#00ffb1)[&#39;&#39;[[Congratulations|Congrats]]&#39;&#39;]</tw-passagedata><tw-passagedata pid="40" name="just move on with life" tags="" position="1625,1000" size="100,100">(text-colour:#38c3ff)[You did not worship to a patron. As a result, a drought has occured and your plants were ruined in before you could harvest. ]
+
+(after:3s)[(text-colour:#840101)[//You can no longer make a profit from your harvest and now stuck in the mud.//]
+]
+(after:6s)[(text-colour:#38c3ff)[In reality, you were just unlucky. However, you believed it was because you did not worship a patron for good weather.]]</tw-passagedata><tw-passagedata pid="41" name="Questions" tags="" position="575,500" size="100,100">(text-colour:#38c3ff)[You, $name1, asked him more questions. He, $name2, tells you he has &#39;&#39;//no workers and is struggling to make  profit//,&#39;&#39; in order to keep his house and rights he needs to be able to pay rent to the monastery. Out of desperation, he asks you to work for him. He&#39;ll allow you to live in his house as long as you take the job offer.]
+
+(text-colour:#38c3ff)[Do you...]
+(text-colour:#00ffb1)[&#39;&#39;[[Work for $name2|Work for him]]&#39;&#39;]
+(text-colour:#00ffb1)[&#39;&#39;[[Decline and wonder else where]]&#39;&#39;]</tw-passagedata><tw-passagedata pid="42" name="pull yourself out of the stream." tags="" position="875,0" size="100,100">(text-colour:#38c3ff)[You managed to lift your body out of the stream. You noticed a tattered piece of paper stuck in the mud, without moving your body you managed to grab it.]
+
+(after:3s)[The piece of paper you grabbed is an advertisement for employment on a barely crop farm. This is exactly what you need to turn your life around!]
+
+(after:6s)[You were ready to hit the main road and towards this village of a lifetime opportunity! However, you tried to get up but you realized your leg is broken...]
+
+(after:9s)[You didn&#39;t realize because your adrenaline was through the roof! You broke it when you smacked into the boulder!]
+
+(after:12s)[$scream]
+
+(after:15s)[You died.]</tw-passagedata><tw-passagedata pid="43" name="worship for a good harvest" tags="" position="1475,1150" size="100,100">You chose to worship a patron in order to ensure you&#39;ll get a good harvest!
+
+Which patron did you decide to worship to? (dropdown:Bind $name4, &quot;St. Scholastica&quot;, &quot;St. George&quot;, &quot;St. Mary&quot;)
+
+
+[[Continue|worshipped]]</tw-passagedata><tw-passagedata pid="44" name="walk" tags="" position="950,550" size="100,100">You encountered a large church and decided to wander in to explore.
+
+A couple monks noticed you wandering around the church and asked you, who are you?
+(dropdown:bind $fake1, &quot;a monk&quot;, &quot;a farmer&quot;, &quot;a citizen&quot;)
+
+[[Uh Oh!]]</tw-passagedata><tw-passagedata pid="45" name="Uh Oh!" tags="" position="1150,550" size="100,100">The monks were able to instantly recognized that you don&#39;t belong there!
+
+I mean, c&#39;mon man.
+
+You look like a mess, no offense though...
+
+And you weren&#39;t slick about it either...
+
+$arrested trespassing.</tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">(function(){"use strict";
 var require,define;!function(){var e={},r={};require=function(i){var n=e[i];return n&&(r[i]=n[1].apply(void 0,n[0].map(require)),e[i]=void 0),r[i]},(define=function(r,i,n){if("function"==typeof r)return r();e[r]=[i,n]}).amd=!0}();/*!
  * https://github.com/paulmillr/es6-shim
